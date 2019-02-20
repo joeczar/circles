@@ -7,16 +7,18 @@
 ## Steps
 
 ### Done
-1. Create React App that shows 1 svg Circle - Done
+Create React App that shows 1 svg Circle - Done
 
 ### Doing
-2. Create an Array handler to show a given amount of circles with attributes passed down through props. - Doing
+Create an Array handler to show a given amount of circles with attributes passed down through props. - Doing
 
 ### To Do
-3. Create Styling for the App. 
+Create Styling for the App. 
 
-4. Incorporate it into personal website.
+Incorporate it into personal website.
 
+
+# React stuff
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

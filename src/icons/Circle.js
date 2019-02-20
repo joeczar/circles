@@ -1,13 +1,15 @@
 import React from 'react';
 
-export const Circle = () => (
+const Circle = () => (
+    <g id="circle">
+        <circle 
+            cx="100" 
+            cy="100" 
+            r="80" 
+            stroke="white" 
+            strokeWidth="1" 
+            fill="none" 
+        />
+    </g>)
 
-    <svg 
-        width="200" 
-        height="200"
-    >
-        <g id="circle">
-            <circle cx="100" cy="100" r="80" stroke="black" stroke-width="1" fill="none" />
-        </g>
-    </svg> 
-)
+export default Circle;

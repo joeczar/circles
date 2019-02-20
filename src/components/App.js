@@ -1,11 +1,15 @@
 import React from 'react';
-import { Circle } from '../icons/Circle';
+import '../style/style.css';
+import CircleArray from './CircleArray';
 
 class App extends React.Component {
+     
     render() {
         return(
             <div className="ui container">
-                <Circle />
+                <CircleArray
+                    circles="9" className="circles" 
+                />
             </div>
         );
     }
