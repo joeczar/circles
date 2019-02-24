@@ -2,10 +2,11 @@ import React from 'react';
 import '../style/style.css';
 import CircleArray from './CircleArray';
 
-const radius = 100;
-const steps = 36;
-const centerX = 350;
-const centerY = 500;
+const radius = 120;
+const steps = 9;
+const centerX = radius * 2 + 5;
+const centerY = radius * 2 + 5;
+const spread = 1;
 
 
 
@@ -20,6 +21,7 @@ class App extends React.Component {
                     centerX={centerX}
                     centerY={centerY}
                     className="circles" 
+                    spread={spread}
                 />
             </div>
         );

@@ -1,3 +1,6 @@
+body {
+  background-color: black;
+}
 .container {
     display: flex;
     justify-content: center;
@@ -7,6 +10,29 @@
     color: white;
   }
   
+  .circle-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    position: relative;
+    
+  }
+
+  .circle-array {
+    margin: auto;
+    display: block;
+    
+    animation: rotate 90s infinite;
+    animation-timing-function: linear;
+    
+    }
+
+  @keyframes rotate {
+    from { transform: rotate(360deg); }
+    to { transform: rotate(0deg); }
+  } 
+
   .ui header {
     color: white;
   }

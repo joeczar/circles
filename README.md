@@ -7,13 +7,17 @@
 ## Steps
 
 ### Done
-Create React App that shows 1 svg Circle - Done
+Create React App that shows 1 svg Circle 
+Create an Array handler to show a given amount of circles with attributes passed down through props.
+rotation animation
+Create Styling for the App.
 
 ### Doing
-Create an Array handler to show a given amount of circles with attributes passed down through props. - Doing
+
 
 ### To Do
-Create Styling for the App. 
+ Figure out responsive sizing and centering of the circles (currently sticking to the top of page)
+ create a function to animate size of circles & spread
 
 Incorporate it into personal website.
 

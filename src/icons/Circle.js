@@ -6,7 +6,7 @@ const Circle = ({ radius, cx, cy }) => (
             cx={cx} 
             cy={cy} 
             r= {radius} 
-            stroke="white" 
+            stroke="grey" 
             strokeWidth="1" 
             fill="none" 
         />

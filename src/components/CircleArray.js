@@ -3,21 +3,16 @@ import Circle from '../icons/Circle';
 import { circlePos } from './circlePos';
 
 
-const CircleArray = ({ radius, steps, centerX, centerY }) => {
+const CircleArray = ({ radius, steps, centerX, centerY, spread }) => {
     
-    let position = [];
-    
-   // let circles = [];
-
     //Create an array of Circles
     const circArr = new Array(Number(steps)).fill(<Circle />);
     
     // Add x position, y positon & radius values
+    let position = [];
+    position = circlePos(radius, steps, centerX, centerY, spread);
     
-    position = circlePos(radius, steps, centerX, centerY);
-
-
-    
+    // map position values to array
     const renderedCircles = circArr.map((_circle, i) => {
         let xPos = position.xValues[i];
         let yPos = position.yValues[i];
@@ -27,13 +22,17 @@ const CircleArray = ({ radius, steps, centerX, centerY }) => {
         }
         
     );
-    console.log(renderedCircles);
     
     return (
-        
-        <svg width="100%" height="100%" >
-            {renderedCircles}
-        </svg>
+        <div className="circle-box">
+            <svg 
+                className="circle-array"
+                width={radius * 4 + 10} 
+                height={radius * 4 + 10}
+            >
+                {renderedCircles}
+            </svg>
+        </div>
         
         
     );
