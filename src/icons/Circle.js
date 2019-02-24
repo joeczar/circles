@@ -1,11 +1,11 @@
 import React from 'react';
 
-const Circle = () => (
-    <g id="circle">
+const Circle = ({ radius, cx, cy }) => (
+    <g id="circle" >
         <circle 
-            cx="100" 
-            cy="100" 
-            r="80" 
+            cx={cx} 
+            cy={cy} 
+            r= {radius} 
             stroke="white" 
             strokeWidth="1" 
             fill="none" 
